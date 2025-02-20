@@ -1,4 +1,3 @@
-# my_first_repo
+# This is file stuctures
 
-
-this is my first repository
+here sass is installed locally
