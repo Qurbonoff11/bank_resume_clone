@@ -1,4 +1,7 @@
-@use 'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap';
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter_18pt-Regular.ttf');
+}
 
 // FONT FAMILY
 $inter: 'Inter', sans-serif;
@@ -31,3 +34,8 @@ $txt-blue: #007DB6;
 $txt-blue-light: #65B2D6;
 $txt-pink: #FF879F;
 $txt-yellow: #F0D075;
+
+// BORDER RADIUS
+$br-16: 1rem;
+$br-32: 2rem;
+$br-50: 50%;
