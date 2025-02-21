@@ -1,4 +1,101 @@
-@use '../../roots';
+@use '../../roots' as *;
 @use '../../mixins';
 
 // Course
+.course{
+    width: 100%;
+    height: 35rem;
+    // @include mixins.flexBox(center, center, '', '');
+    .cont{
+        width: 100%;
+        height: 90%;
+        border-radius: $border-radius-16;
+        background-color: $bg-gray-light;
+        padding: 1.5rem;
+        @include mixins.flexBox(space-between, center, row, '');
+
+        .cards{
+            width: 50%;
+            height: 100%;
+            @include mixins.flexBox(space-around, flex-start, column, '');
+            .card_1{
+                width: 100%;
+                height: 45%;
+                border-radius: $border-radius-16;
+                background-color: $bg-pink;
+                padding: 1.5rem;
+                @include mixins.flexBox(space-between, flex-start, column, '');
+                span{
+                    font-size: $fs-16;
+                    color: $txt-pink;
+                    background-color: $bg-white;
+                    padding: .3rem .7rem;
+                    border-radius: $border-radius-7;
+                }
+                div{
+                    h4{
+                        font-size: $fs-24;
+                        color: $txt-white;
+                        text-transform: uppercase;
+                        font-weight: $fw-8;
+                    }
+                    p{
+                        font-size: $fs-14;
+                        color: $txt-white;
+                    }
+                }
+            }
+            .card_2{
+                width: 100%;
+                height: 45%;
+                border-radius: $border-radius-16;
+                background-color: $bg-blue-light;
+                padding: 1.5rem;
+                @include mixins.flexBox(space-between, flex-start, column, '');
+                span{
+                    font-size: $fs-16;
+                    color: $txt-blue-light;
+                    background-color: $bg-white;
+                    padding: .3rem .7rem;
+                    border-radius: $border-radius-7;
+                }
+                div{
+                    h4{
+                        font-size: $fs-24;
+                        color: $txt-white;
+                        text-transform: uppercase;
+                        font-weight: $fw-8;
+                    }
+                    p{
+                        font-size: $fs-14;
+                        color: $txt-white;
+                    }
+                }
+            }
+        }
+        .box{
+            width: 45%;
+            height: 100%;
+            @include mixins.flexBox(center, center, column, '');
+            .card{
+                width: 60%;
+                height: 70%;
+                @include mixins.flexBox(center, flex-start, column, 1rem);
+                h3{
+                    font-size: $fs-32;
+                    color: $txt-dark;
+                    font-weight: $fw-8;
+                    text-transform: uppercase;
+                }
+                p{
+                    font-size: $fs-16;
+                    color: $txt-dark;
+                }
+                a{
+                    margin-top: 1.2rem;
+                    @include mixins.button(10px 20px, $border-radius-7, $bg-blue, 1px, solid, $bg-blue, $txt-white, $fs-16);
+                }
+            }
+        }
+    }
+}

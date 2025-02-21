@@ -105,7 +105,7 @@
             grid-column-start: 1;
             grid-row-start: 6;
             .log_in{
-                @include mixins.button(10px 20px, $border-radius-7, $bg-blue, 1, solid, $bg-blue, $txt-white, $fs-16);
+                @include mixins.button(10px 20px, $border-radius-7, $bg-blue, 1px, solid, $bg-blue, $txt-white, $fs-16);
             }
         }
 
@@ -114,8 +114,14 @@
             grid-row: span 3 / span 3;
             grid-column-start: 4;
             grid-row-start: 6;
-            .log_in{
-                @include mixins.button(10px 20px, $border-radius-7, $bg-blue, 1, solid, $bg-blue, $txt-white, $fs-16);
+            ul{
+                margin-top: 1.5rem;
+                .sign_up{
+                    @include mixins.button(10px 20px, $border-radius-7, $transparent, 1px, solid, $bg-blue, $txt-blue, $fs-16);
+                }
+                .log_in{
+                    @include mixins.button(10px 20px, $border-radius-7, $bg-blue, 1px, solid, $bg-blue, $txt-white, $fs-16);
+                }
             }
         }
 
