@@ -17,4 +17,9 @@
     border-color: $border-color;
     color: $txt-color;
     font-size: $fs;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &:hover{
+        filter: brightness(0.9);
+    }
 }

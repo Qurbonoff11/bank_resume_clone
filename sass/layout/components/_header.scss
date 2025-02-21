@@ -14,17 +14,9 @@
             li{
                 .log-in{
                     @include mixins.button(10px 20px, $border-radius-7, $bg-blue, 1px, solid, $bg-blue, $txt-white, $fs-16);
-                    transition: all .3s;
-                    &:hover{
-                        filter: brightness(.9)
-                    }
                 }
                 .sign-up{
                     @include mixins.button(10px 20px, $border-radius-7, $transparent, 1px, solid, $bg-blue, $txt-blue, $fs-16);
-                    transition: all .3s;
-                    &:hover{
-                        filter: brightness(.9)
-                    }
                 }
 
             }

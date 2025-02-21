@@ -2,3 +2,123 @@
 @use '../../mixins';
 
 // Statistics
+
+.statistics{
+    width: 100%;
+    height: 65rem;
+    @include mixins.flexBox(center, center, '', '');
+    .cards {
+        height: 80%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        gap: 3rem;
+
+        .card_1,
+        .card_2,
+        .card_3,
+        .card_4,
+        .card_5{
+            background-color: $bg-gray-light;
+            border-radius: $border-radius-16;
+            padding: 1.5rem;
+        }
+
+        .card_1,
+        .card_2,
+        .card_3{
+            @include mixins.flexBox(center, center, column, 1rem);
+            .img{
+                width: 65%;
+                img{
+                    width: 100%;
+                    border-radius: $border-radius-16;
+                }
+            }
+            .txt{
+                @include mixins.flexBox(center, center, column, '');
+                h2{
+                    font-size: $fs-48;
+                    font-weight: $fw-9;
+                    color: $txt-dark;
+                }
+                p{
+                    width: 70%;
+                    font-size: $fs-16;
+                    color: $txt-dark;
+                    font-weight: $fw-5;
+                    text-align: center;
+                    gap: 1rem;
+                }
+            }
+        }
+
+        .card_4,
+        .card_5{
+            @include mixins.flexBox(center, center, row, 1rem);
+            .txt{
+                width: 65%;
+                @include mixins.flexBox(center, start, column, 1rem);
+                h4{
+                    font-size: $fs-18;
+                    font-weight: $fw-7;
+                    color: $txt-dark;
+                }
+                p{
+                    width: 85%;
+                    font-size: $fs-16;
+                    color: $txt-dark;
+                    font-weight: $fw-5;
+                    gap: 1rem;
+                }
+                ul{
+                    @include mixins.flexBox(center, center, row, 2rem);
+
+                }
+            }
+            .img{
+                margin-bottom: 2.5rem;
+            }
+        }
+
+        .card_1 {
+            grid-column: span 2 / span 2;
+            grid-row: span 5 / span 5;
+
+        }
+
+        .card_2 {
+            grid-column: span 2 / span 2;
+            grid-row: span 5 / span 5;
+            grid-column-start: 3;
+        }
+
+        .card_3 {
+            grid-column: span 2 / span 2;
+            grid-row: span 5 / span 5;
+            grid-column-start: 5;
+        }
+
+        .card_4 {
+            grid-column: span 3 / span 3;
+            grid-row: span 3 / span 3;
+            grid-column-start: 1;
+            grid-row-start: 6;
+            .log_in{
+                @include mixins.button(10px 20px, $border-radius-7, $bg-blue, 1, solid, $bg-blue, $txt-white, $fs-16);
+            }
+        }
+
+        .card_5 {
+            grid-column: span 3 / span 3;
+            grid-row: span 3 / span 3;
+            grid-column-start: 4;
+            grid-row-start: 6;
+            .log_in{
+                @include mixins.button(10px 20px, $border-radius-7, $bg-blue, 1, solid, $bg-blue, $txt-white, $fs-16);
+            }
+        }
+
+    }
+}
+

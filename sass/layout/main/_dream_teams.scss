@@ -29,10 +29,6 @@
             .begin{
                 margin-top: 1.25rem;
                 @include mixins.button(10px 20px, $border-radius-7, $bg-blue, 1, solid, $bg-blue, $txt-white, $fs-16);
-                transition: all .3s;
-                &:hover{
-                    filter: brightness(.9);
-                }
             }
         }
         .img_container{
