@@ -46,7 +46,7 @@ a {
   border-style: solid;
   border-color: #007DB6;
   color: #fff;
-  font-size: 1rem;
+  font-size: 16px;
   transition: all 0.3s ease;
   cursor: pointer;
 }
@@ -61,7 +61,7 @@ a {
   border-style: solid;
   border-color: #007DB6;
   color: #007DB6;
-  font-size: 1rem;
+  font-size: 16px;
   transition: all 0.3s ease;
   cursor: pointer;
 }
@@ -107,7 +107,7 @@ a {
   gap: "";
 }
 .dream_section .dream_teams .txt_container h1 {
-  font-size: 4rem;
+  font-size: 64px;
   color: #292929;
   font-weight: 800;
   text-transform: uppercase;
@@ -115,7 +115,7 @@ a {
 .dream_section .dream_teams .txt_container p {
   margin-top: 0.6rem;
   color: #292929;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
 }
 .dream_section .dream_teams .txt_container .begin {
@@ -127,7 +127,7 @@ a {
   border-style: solid;
   border-color: #007DB6;
   color: #fff;
-  font-size: 1rem;
+  font-size: 16px;
   transition: all 0.3s ease;
   cursor: pointer;
 }
