@@ -21,5 +21,46 @@
 
             }
         }
+        .burger{
+            display: none;
+        }
     }
+}
+
+// * RESPONSIVE
+
+@media only screen and (max-width: 1400px){
+
+}
+@media only screen and (max-width: 1200px){
+
+}
+@media only screen and (max-width: 992px){
+
+}
+@media only screen and (max-width: 768px){
+
+}
+@media only screen and (max-width: 576px){
+    .container{
+        max-width: 350px;
+    }
+    .header{
+        .nav{
+            ul{
+                display: none;
+            }
+            .burger{
+                display: block;
+                color: $txt-dark;
+                span{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 380px){
+
 }

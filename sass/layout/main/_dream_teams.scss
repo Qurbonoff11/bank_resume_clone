@@ -5,14 +5,11 @@
 .dream_section{
     background-color: $bg-gray-light;
     width: 100%;
-    height: 30rem;
+    height: 50rem;
 
     .dream_teams{
-        height: 100%;
-        width: 100%;
         @include mixins.flexBox(space-between, center, '', 2rem);
         .txt_container{
-            height: 100%;
             @include mixins.flexBox(center, flex-start, column, '');
             h1{
                 font-size: $fs-64;
@@ -32,13 +29,51 @@
             }
         }
         .img_container{
-            height: 100%;
-            width: 80%;
+            width: 55rem;
             img{
                 margin-top: 3rem;
-                width: 100%;
-                height: 100%;
             }
         }
     }
+}
+
+
+
+// * RESPONSIVE
+
+@media only screen and (max-width: 1400px){
+
+}
+@media only screen and (max-width: 1200px){
+
+}
+@media only screen and (max-width: 992px){
+
+}
+@media only screen and (max-width: 768px){
+
+}
+@media only screen and (max-width: 576px){
+    .container{
+        max-width: 350px;
+    }
+    .dream_teams{
+        @include mixins.flexBox(space-between, center, '', 2rem);
+        flex-wrap: wrap-reverse;
+        .txt_container{
+            h1{
+                font-size: 1rem;
+            }
+        }
+        .img_container{
+            width: 20rem;
+            img{
+                width: 100%;
+                margin-top: 3rem;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 380px){
+
 }

@@ -27,9 +27,10 @@
         .card_1,
         .card_2,
         .card_3{
+            width: 27rem;
             @include mixins.flexBox(center, center, column, 1rem);
             .img{
-                width: 65%;
+                width: 12rem;
                 img{
                     width: 100%;
                     border-radius: $border-radius-16;
