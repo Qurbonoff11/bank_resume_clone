@@ -1,7 +1,3 @@
-@font-face {
-  font-family: "Inter";
-  src: url("../assets/fonts/Inter_18pt-Regular.ttf");
-}
 *,
 *::after,
 *::before {
@@ -22,6 +18,112 @@ a {
 .container {
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.header {
+  background-color: #cecece;
+}
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+  padding: 26px 0;
+}
+.header .nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+.header .nav ul li .log-in {
+  padding: 10px 20px;
+  border-radius: 0.4375rem;
+  background-color: #007DB6;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #007DB6;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+.header .nav ul li .log-in:hover {
+  filter: brightness(0.9);
+}
+.header .nav ul li .sign-up {
+  padding: 10px 20px;
+  border-radius: 0.4375rem;
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #007DB6;
+  color: #007DB6;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+.header .nav ul li .sign-up:hover {
+  filter: brightness(0.9);
+}
+
+.dream_section {
+  background-color: #cecece;
+  width: 100%;
+  height: 30rem;
+}
+.dream_section .dream_teams {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: "";
+  gap: 2rem;
+}
+.dream_section .dream_teams .txt_container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: "";
+}
+.dream_section .dream_teams .txt_container h1 {
+  font-size: 4rem;
+  color: #292929;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.dream_section .dream_teams .txt_container p {
+  margin-top: 0.6rem;
+  color: #292929;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.dream_section .dream_teams .txt_container .begin {
+  margin-top: 1.25rem;
+  padding: 10px 20px;
+  border-radius: 0.4375rem;
+  background-color: #007DB6;
+  border-width: 1;
+  border-style: solid;
+  border-color: #007DB6;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+.dream_section .dream_teams .txt_container .begin:hover {
+  filter: brightness(0.9);
+}
+.dream_section .dream_teams .img_container {
+  height: 100%;
+  width: 80%;
+}
+.dream_section .dream_teams .img_container img {
+  margin-top: 3rem;
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

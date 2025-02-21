@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,16 @@
     <meta name="description" content="Банк резюме">
     <meta name="keywords" content="Банк резюме, резюме, работа, вакансии">
 
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
     <!-- LINK -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- FAV ICON -->
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/svg/logo/Vector.svg" type="image/x-icon">
 
     <!-- CSS LINK -->
     <link rel="stylesheet" href="style/style.css">
@@ -20,20 +26,21 @@
     <!-- TITLE -->
     <title>Банк резюме</title>
 </head>
+
 <body>
 
     <!-- HEADER -->
     <header class="header">
-        <nav class="nav">
+        <nav class="nav container">
             <a href="#">
-                <img src="./assets/svg/logo.svg" alt="This is logo">
+                <img src="./assets/svg/header/logo.svg" alt="This is logo">
             </a>
             <ul>
                 <li>
-                    <a href="#">Вход</a>
+                    <a class="log-in" href="#">Вход</a>
                 </li>
                 <li>
-                    <a href="#">Регистрация</a>
+                    <a class="sign-up" href="#">Регистрация</a>
                 </li>
             </ul>
         </nav>
@@ -41,7 +48,26 @@
 
     <!-- MAIN -->
     <main>
+        <!-- DREAM TEAMS -->
+        <section class="dream_section">
+            <div class="dream_teams container">
+                <div class="txt_container">
+                    <h1>команды мечты создаются здесь</h1>
+                    <p>
+                        помощник в поиске работы и сотрудников в сфере образования
+                    </p>
+                    <a class="begin" href="#">
+                        Начать
+                    </a>
+                </div>
+                <div class="img_container">
+                    <img src="./assets/img/sec_!/main_illustr.png" alt="This is dream teams">
+                </div>
+            </div>
+        </section>
+        <section class="statistics">
 
+        </section>
     </main>
 
     <!-- FOOTER -->
@@ -52,4 +78,5 @@
     <!-- JAVA SCRIPT -->
     <script src="js/app.js"></script>
 </body>
+
 </html>

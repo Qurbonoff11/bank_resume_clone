@@ -1,26 +1,39 @@
-@font-face {
-    font-family: 'Inter';
-    src: url('../assets/fonts/Inter_18pt-Regular.ttf');
-}
-
 // FONT FAMILY
 $inter: 'Inter', sans-serif;
 
 // FONT SIZE
-$fs-12: 12px;
-$fs-14: 14px;
-$fs-16: 16px;
-$fs-18: 18px;
-$fs-20: 20px;
-$fs-24: 24px;
-$fs-28: 28px;
-$fs-32: 32px;
-$fs-36: 36px;
-$fs-40: 40px;
-$fs-48: 48px;
+$fs-12: 0.75rem;
+$fs-14: 0.875rem;
+$fs-16: 1rem;
+$fs-18: 1.125rem;
+$fs-20: 1.25rem;
+$fs-24: 1.5rem;
+$fs-28: 1.75rem;
+$fs-32: 2rem;
+$fs-36: 2.25rem;
+$fs-40: 2.5rem;
+$fs-48: 2.75rem;
+$fs-56: 3rem;
+$fs-60: 3.5rem;
+$fs-64: 4rem;
+
+// FONT WEIGHT
+$fw-2: 200;
+$fw-3: 300;
+$fw-4: 400;
+$fw-5: 500;
+$fw-6: 600;
+$fw-7: 700;
+$fw-8: 800;
+$fw-9: 900;
+
+// TRANSPARENT
+$transparent: transparent;
+$inherit: inherit;
 
 // BG COLOR
 $bg-white: #fff;
+$bg-gray-light: #cecece;
 $bg-dark: #292929;
 $bg-blue: #007DB6;
 $bg-blue-light: #65B2D6;
@@ -36,6 +49,7 @@ $txt-pink: #FF879F;
 $txt-yellow: #F0D075;
 
 // BORDER RADIUS
-$br-16: 1rem;
-$br-32: 2rem;
-$br-50: 50%;
+$border-radius-7: 0.4375rem;
+$border-radius-16: 1rem;
+$border-radius-32: 2rem;
+$border-radius-50: 50%;
