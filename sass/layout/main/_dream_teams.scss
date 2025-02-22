@@ -8,6 +8,7 @@
     height: 50rem;
 
     .dream_teams{
+        // width: 100%;
         @include mixins.flexBox(space-between, center, '', 2rem);
         .txt_container{
             @include mixins.flexBox(center, flex-start, column, '');
