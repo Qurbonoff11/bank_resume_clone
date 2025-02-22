@@ -11,7 +11,7 @@
         @include mixins.flexBox(space-between, center, '', 2rem);
         .txt_container{
             @include mixins.flexBox(center, flex-start, column, '');
-            h1{
+            .heading_title{
                 font-size: $fs-64;
                 color: $txt-dark;
                 font-weight: $fw-8;
@@ -61,8 +61,8 @@
         @include mixins.flexBox(space-between, center, '', 2rem);
         flex-wrap: wrap-reverse;
         .txt_container{
-            h1{
-                font-size: 1rem;
+            .heading_title{
+                font-size: 10px;
             }
         }
         .img_container{
